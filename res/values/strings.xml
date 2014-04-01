@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Anglers</string>
+    <string name="action_settings">Menu</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="LABEL_BASICS_TOOLBAR_TITLE">Basics</string>
+    <string name="LABEL_CHECKLIST_TOOLBAR_TITLE">Checklist</string>
+    <string name="LABEL_MAP_TOOLBAR_TITLE">Map</string>
+    <string name="LABEL_SPECIES_TOOLBAR_TITLE">Species</string>
+    <string name="LABEL_SCHEDULE_TOOLBAR_TITLE">Schedule</string>
+    <string name="LABEL_GALLERY_TOOLBAR_TITLE">Gallery</string>
+    <string name="title_activity_grid_view">Photos</string>
+    <string name="title_activity_display_species">Species</string>
+    <string name="desc">Fish face</string>
+    <string name="title_activity_map">Map</string>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="home_content_image_old">false</item>
+    <item type="id" name="home_content_image_current">false</item>
+    <item type="id" name="home_title_image">false</item>
+    
+    <item type="id" name="slideshow_progress_indicators">false</item>
+    <item type="id" name="home_button_basics">false</item>
+    
+    
+</resources>

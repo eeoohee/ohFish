@@ -1,0 +1,278 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/splash"
+    android:paddingBottom="@dimen/home_padding_vertical"
+    android:paddingLeft="@dimen/home_padding_horizontal"
+    android:paddingRight="@dimen/home_padding_horizontal"
+    android:paddingTop="@dimen/home_padding_vertical"
+    tools:context=".HomeFish"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="502dp"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/home_content_padding"
+            android:layout_weight="1.0"
+            android:paddingLeft="@dimen/home_content_padding"
+            android:paddingRight="@dimen/home_content_padding" >
+
+            <ImageView
+                android:id="@id/home_content_image_old"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@null" />
+
+            <ImageView
+                android:id="@id/home_content_image_current"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@null" />
+
+            <ImageView
+                android:id="@id/home_title_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="20.0dip"
+                android:src="@drawable/home_title" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/home_black_semi_transparent_bar"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@id/slideshow_progress_indicators"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+            </FrameLayout>
+        </FrameLayout>
+
+        
+        
+        
+        
+        
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/home_button_spacing"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/home_content_padding"
+            android:paddingRight="@dimen/home_content_padding" >
+
+            <LinearLayout
+                android:id="@id/home_button_basics"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_home_button_bg"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/home_icon_padding" 
+                    android:src="@drawable/home_basics_icon" 
+                     />
+
+                <TextView
+                    style="@style/home_button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/LABEL_BASICS_TOOLBAR_TITLE" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/home_button_spacing"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_home_button_bg"
+                android:orientation="vertical"
+                android:onClick="showMap" >
+
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="67dp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/home_icon_padding"
+                    android:src="@drawable/home_find_icon" />
+
+                <TextView
+                    style="@style/home_button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/LABEL_MAP_TOOLBAR_TITLE" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/home_button_spacing"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/home_content_padding"
+            android:paddingRight="@dimen/home_content_padding" >
+
+            <LinearLayout
+                android:id="@id/home_button_basics"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_home_button_bg"
+                android:orientation="vertical" 
+                android:onClick="showSpecies"
+                >
+
+                <ImageView
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/home_icon_padding"
+                    android:src="@drawable/home_species_icon" 
+                     />
+
+                <TextView
+                    style="@style/home_button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/LABEL_SPECIES_TOOLBAR_TITLE" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/home_button_spacing"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_home_button_bg"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/home_icon_padding" 
+                    android:src="@drawable/home_checklist_icon"
+                    />
+
+                <TextView
+                    style="@style/home_button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/LABEL_CHECKLIST_TOOLBAR_TITLE" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/home_button_spacing"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/home_content_padding"
+            android:paddingRight="@dimen/home_content_padding" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_home_button_bg"
+                android:orientation="vertical" >
+
+                <ImageView
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/home_icon_padding"
+                    android:src="@drawable/home_schedule_icon"
+                    
+                     />
+
+                <TextView
+                    style="@style/home_button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/LABEL_SCHEDULE_TOOLBAR_TITLE" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/home_button_spacing"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_home_button_bg"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/home_icon_padding"
+                    android:src="@drawable/home_gallery_icon" />
+
+                <TextView
+                    style="@style/home_button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/LABEL_GALLERY_TOOLBAR_TITLE" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
