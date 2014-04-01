@@ -15,6 +15,6 @@
     <string name="title_activity_grid_view">Photos</string>
     <string name="title_activity_display_species">Species</string>
     <string name="desc">Fish face</string>
-    <string name="title_activity_map">Map</string>
+    <string name="title_activity_map">Interactive Fish Map</string>
 
 </resources>

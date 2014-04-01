@@ -24,5 +24,8 @@
       
         
     </style>
+    
+    <style name="LightThemeSelector" parent="android:style/Theme.Light"></style>
+    
 
 </resources>

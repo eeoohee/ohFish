@@ -6,11 +6,13 @@ import com.google.maps.android.clustering.ClusterItem;
 
 public class MyItem implements ClusterItem {
     private final LatLng mPosition;
-    private String name;
+    public final String name;
+    public final int profilePhoto;
 
-    public MyItem(double lat, double lng, String name) {
+    public MyItem(double lat, double lng, String name, int photo_id) {
         mPosition = new LatLng(lat, lng);
-        name = name;
+        this.name = name;
+        this.profilePhoto = photo_id;
     }
 
     @Override
@@ -18,7 +20,5 @@ public class MyItem implements ClusterItem {
         return mPosition;
     }
     
-    public String getName() {
-    	return name;
-    }
+ 
 }

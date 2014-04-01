@@ -11,5 +11,8 @@
     <dimen name="home_divider_height">1.0dip</dimen>
     <dimen name="home_icon_padding">9.0dip</dimen>
     <dimen name="home_info_margin">15.0dip</dimen>
+    
+    <dimen name="custom_profile_image">50dp</dimen>
+    <dimen name="custom_profile_padding">2dp</dimen>
 
 </resources>
