@@ -26,20 +26,6 @@
             android:paddingRight="@dimen/home_content_padding" >
 
             <ImageView
-                android:id="@id/home_content_image_old"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
-                android:src="@null" />
-
-            <ImageView
-                android:id="@id/home_content_image_current"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
-                android:src="@null" />
-
-            <ImageView
                 android:id="@id/home_title_image"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -66,10 +52,7 @@
 
         
         
-        
-        
-        
-        
+         
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -152,7 +135,7 @@
                 android:layout_weight="1.0"
                 android:background="@drawable/selector_home_button_bg"
                 android:orientation="vertical" 
-                android:onClick="showSpecies"
+                
                 >
 
                 <ImageView
